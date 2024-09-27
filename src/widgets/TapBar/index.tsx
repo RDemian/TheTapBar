@@ -10,7 +10,6 @@ import styles from './styles.module.css';
  */
 export const TapBar = () => {
 	const items = useTapBar();
-	console.log('🚀 ~ TapBar ~ items:=', items)
 
 	const isScrolling = useIsSсroll();
 

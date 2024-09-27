@@ -10,11 +10,12 @@
   -moz-osx-font-smoothing: grayscale;
 
   --text-color: #000000;
-  --background-color: #FFFFFF;
+  --main-background: lightgray;
+  --block-background: #FFFFFF;
 }
 
 body {
   font-family: inherit;
 	color: var(--text-color);
-  background-color: var(--background-color);
+  background-color: var(--main-background);
 }
