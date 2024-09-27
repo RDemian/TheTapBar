@@ -2,7 +2,7 @@ import cn from 'classnames';
 import { Button } from '../../components/Button';
 import { Bar } from '../../components/Bar';
 import { useTapBar } from './hooks/useTapBar';
-import { useIsSсroll } from './hooks/useIsSсroll';
+import { useIsBottomSсroll } from './hooks/useIsBottomSсroll';
 import styles from './styles.module.css';
 
 /**
@@ -11,11 +11,11 @@ import styles from './styles.module.css';
 export const TapBar = () => {
 	const items = useTapBar();
 
-	const isScrolling = useIsSсroll();
+	const isScrolling = useIsBottomSсroll();
 
 	return (
 		<Bar className={cn(styles['sticky'], {
-			[styles['hide']]: !isScrolling,
+			[styles['hide']]: isScrolling,
 		})}>
 			{items.map(({ id, text, icon, action }) => (
 				<Button
