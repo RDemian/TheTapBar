@@ -24,9 +24,9 @@ export const reducer = (state: IStore, action: IAction): IStore => {
     console.log('🚀 ~ reducer ~ action:', state, action)
     switch (action.type) {
         case ActionTypes.ADD_COMMENTS:
-            return { ...state, comments: state.comments++ };
+            return { ...state, comments: state.comments + 1 };
         case ActionTypes.ADD_FAVORITES:
-            return { ...state, favorites: state.favorites++ };
+            return { ...state, favorites: state.favorites + 1 };
         default:
             return state;
     }
