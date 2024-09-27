@@ -1,0 +1,20 @@
+:root {
+  font-family: "Proxima Nova", "Raleway", Arial, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --text-color: #000000;
+  --background-color: #FFFFFF;
+}
+
+body {
+  font-family: inherit;
+	color: var(--text-color);
+  background-color: var(--background-color);
+}

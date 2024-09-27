@@ -1,0 +1,10 @@
+.sticky {
+	position: fixed;
+	bottom: 0;
+	transform: translateY(0);
+	transition: transform 0.3s ease 0s;
+}
+
+.hide {
+	transform: translateY(100%);
+}
